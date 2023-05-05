@@ -14,7 +14,7 @@
                 this.input.on('pointerdown', (event) => {
                     this.tweens.add({
                         targets: this.meep,
-                        scale: 2,
+                        scale: 5,
                         duration: 100
                     });
                 });
@@ -35,7 +35,7 @@
                     // twerk the mouse
                     this.tweens.add({
                         targets: this.meep,
-                        angle: {from: -5, to: 0},
+                        angle: {from: -5, to: 45},
                         duration: 250
                     });
 
@@ -46,8 +46,8 @@
                     // shoot away quickly
                     this.tweens.add({
                         targets: dropping,
-                        x: '+=' + (10*Math.random()),
-                        y: '+=' + (10*Math.random()),
+                        x: '+=' + (15*Math.random()),
+                        y: '+=' + (15*Math.random()),
                         duration: 250,
                         ease: 'Cubic.out'
                     });
@@ -68,7 +68,7 @@
             width: 640,
             height: 520,
             scene: Demo,
-            backgroundColor: 0xdddddd,
+            backgroundColor: 0xffb6c1,
             parent: 'here'
         });
     </script>
